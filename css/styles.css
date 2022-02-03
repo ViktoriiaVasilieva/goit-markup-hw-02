@@ -1,13 +1,14 @@
 :root {
     --primary-color: #212121;
     --secondary-color: #757575;
-    --white-color: #fff;
+    --white-color: #ffffff;
+    --accent-color: #2196f3;
 }
 body {
     font-size: 14px;
     font-weight: 400;
     font-style: normal;
-    font-family: 'Roboto', 'sans-serif';
+    font-family: 'Roboto', sans-serif;
     color: var(--primary-color);
 }
 .section {
@@ -19,7 +20,118 @@ body {
     border: 1px solid red;
     padding: 0 15px;
 }
-.header-container {
+.page-nav,
+.contacts,
+.nav-links,
+.header-container,
+.team,
+.items,
+.button {
     display: flex;
+}
+.page-nav {
+    align-items: center;
+}
+.header-container {
     justify-content: space-between;
+}
+.logo {
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    font-size: 26px;
+    line-height: calc(31 / 26);
+    letter-spacing: 0.03em;
+    color: var(--accent-color);
+    margin-right: 93px;
+}
+.logo span {
+    color: var(--primary-color);
+}
+.nav-links-item + .nav-links-item {
+    margin-left: 50px;
+}
+.contacts-item:not(:last-child) {
+    margin-right: 50px;
+}
+
+.contacts-link,
+.nav-links-link {
+    padding: 32px 0;
+    display: block;
+    font-weight: 500;
+    color: var(--primary-color);
+}
+
+.contacts-link {
+    color: var(--secondary-color);
+}
+.contacts-link:focus,
+.nav-links-link:hover,
+.contacts-link:hover,
+.nav-links-link:focus {
+    color: var(--accent-color);
+}
+button:hover,
+button:focus {
+    background-color: var(--accent-color);
+    color: var(--white-color);
+}
+
+.nav-links,
+.button {
+    color: var(--primary-color);
+}
+
+.address {
+    text-decoration: none;
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    font-style: normal;
+    color: var(--white-color);
+}
+.description {
+    text-align: center;
+    margin-top: 30px;
+}
+
+.team-position {
+    margin: 10px 0 30px 0;
+    padding: 10px 0 30px 0;
+    font-size: 16px;
+    line-height: calc(19 / 16);
+    letter-spacing: 0.03em;
+    color: var(--secondary-color);
+}
+.team-section {
+    background-color: #f5f4fa;
+}
+.list-item-section {
+    padding: 30px 0;
+    margin-right: 30px;
+}
+.list-item {
+    background-color: var(--white-color);
+}
+.button {
+    cursor: pointer;
+}
+.footer-section {
+    background-color: #2f303a;
+    margin-bottom: 20px;
+}
+.footer-section span {
+    color: var(--white-color);
+}
+.footer-section .logo {
+    margin: 0 0 20px 0;
+}
+.contacts-item-footer {
+    font-size: 14px;
+    line-height: calc(24 / 14);
+    letter-spacing: 0.03em;
+    margin-top: 9px;
+}
+.footer .contacts-link {
+    padding: 0;
 }

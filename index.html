@@ -17,7 +17,7 @@
     <body>
         <header class="header">
             <div class="container header-container">
-                <nav>
+                <nav class="page-nav">
                     <a href="./index.html" lang="en" class="logo"
                         >Web<span>Studio</span></a
                     >
@@ -60,7 +60,7 @@
         <main>
             <section>
                 <h1>Эффективные решения для вашего бизнеса</h1>
-                <button type="button">Заказать услугу</button>
+                <button type="button" class="button">Заказать услугу</button>
             </section>
 
             <section class="section">
@@ -103,111 +103,137 @@
             <section class="section">
                 <h2>Чем мы занимаемся</h2>
                 <div class="container">
-                    <ul>
-                        <li>
-                            <img
-                                src="./img/studio-page/what-we-are-doing-1img.jpg"
-                                alt="печать на клавиатуре"
-                                width="370"
-                                height="294"
-                            />
-                        </li>
-                        <li>
-                            <img
-                                src="./img/studio-page/what-we-are-doing-2img.jpg"
-                                alt="использование телефона и ноутбука"
-                                width="370"
-                                height="294"
-                            />
-                        </li>
-                        <li>
-                            <img
-                                src="./img/studio-page/what-we-are-doing-3img.jpg"
-                                alt="работа с планшетом"
-                                width="370"
-                                height="294"
-                            />
-                        </li>
+                    <ul class="items">
+                        <section class="list-item-section">
+                            <li class="list-item">
+                                <img
+                                    src="./img/studio-page/what-we-are-doing-1img.jpg"
+                                    alt="печать на клавиатуре"
+                                    width="370"
+                                    height="294"
+                                />
+                            </li>
+                        </section>
+                        <section class="list-item-section">
+                            <li class="list-item">
+                                <img
+                                    src="./img/studio-page/what-we-are-doing-2img.jpg"
+                                    alt="использование телефона и ноутбука"
+                                    width="370"
+                                    height="294"
+                                />
+                            </li>
+                        </section>
+                        <section class="list-item-section">
+                            <li class="list-item">
+                                <img
+                                    src="./img/studio-page/what-we-are-doing-3img.jpg"
+                                    alt="работа с планшетом"
+                                    width="370"
+                                    height="294"
+                                />
+                            </li>
+                        </section>
                     </ul>
                 </div>
             </section>
-            <section class="section">
+            <section class="section team-section">
                 <h2>Наша команда</h2>
-                <div class="container">
-                    <ul>
-                        <li>
-                            <img
-                                src="./img/studio-page/product-designer-img.jpg"
-                                alt="фото Product Designer"
-                                width="270"
-                                height="260"
-                            />
-                            <div class="description">
-                                <h3>Игорь Демьяненко</h3>
-                                <p lang="en">Product Designer</p>
-                            </div>
-                        </li>
-                        <li>
-                            <img
-                                src="./img/studio-page/frontend-developer-img.jpg"
-                                alt="фото Frontend Developer"
-                                width="270"
-                                height="260"
-                            />
-                            <div class="description">
-                                <h3>Ольга Репина</h3>
-                                <p lang="en">Frontend Developer</p>
-                            </div>
-                        </li>
-                        <li>
-                            <img
-                                src="./img/studio-page/marketing-img.jpg"
-                                alt="фото Marketing"
-                                width="270"
-                                height="260"
-                            />
-                            <div class="description">
-                                <h3>Николай Тарасов</h3>
-                                <p lang="en">Marketing</p>
-                            </div>
-                        </li>
-                        <li>
-                            <img
-                                src="./img/studio-page/ui-gesigner-img.jpg"
-                                alt="фото UI Designer"
-                                width="270"
-                                height="260"
-                            />
-                            <div class="description">
-                                <h3>Михаил Ермаков</h3>
-                                <p lang="en">UI Designer</p>
-                            </div>
-                        </li>
+                <div class="container container-team">
+                    <ul class="team">
+                        <section class="list-item-section">
+                            <li class="list-item">
+                                <img
+                                    src="./img/studio-page/product-designer-img.jpg"
+                                    alt="фото Product Designer"
+                                    width="270"
+                                    height="260"
+                                />
+                                <div class="description">
+                                    <h3 class="list-item">Игорь Демьяненко</h3>
+                                    <p lang="en" class="team-position">
+                                        Product Designer
+                                    </p>
+                                </div>
+                            </li>
+                        </section>
+                        <section class="list-item-section">
+                            <li class="list-item">
+                                <img
+                                    src="./img/studio-page/frontend-developer-img.jpg"
+                                    alt="фото Frontend Developer"
+                                    width="270"
+                                    height="260"
+                                />
+                                <div class="description">
+                                    <h3 class="list-item">Ольга Репина</h3>
+                                    <p lang="en" class="team-position">
+                                        Frontend Developer
+                                    </p>
+                                </div>
+                            </li>
+                        </section>
+                        <section class="list-item-section">
+                            <li class="list-item">
+                                <img
+                                    src="./img/studio-page/marketing-img.jpg"
+                                    alt="фото Marketing"
+                                    width="270"
+                                    height="260"
+                                />
+                                <div class="description">
+                                    <h3 class="list-item">Николай Тарасов</h3>
+                                    <p lang="en" class="team-position">
+                                        Marketing
+                                    </p>
+                                </div>
+                            </li>
+                        </section>
+                        <section class="list-item-section">
+                            <li class="list-item">
+                                <img
+                                    src="./img/studio-page/ui-gesigner-img.jpg"
+                                    alt="фото UI Designer"
+                                    width="270"
+                                    height="260"
+                                />
+                                <div class="description">
+                                    <h3 class="list-item" s>Михаил Ермаков</h3>
+                                    <p lang="en" class="team-position">
+                                        UI Designer
+                                    </p>
+                                </div>
+                            </li>
+                        </section>
                     </ul>
                 </div>
             </section>
         </main>
         <footer class="footer">
             <div class="container">
-                <a href="./index.html" lang="en" class="logo"
-                    >Web<span>Studio</span></a
-                >
-                <address>г. Киев, пр-т Леси Украинки, 26</address>
-                <ul class="contacts">
-                    <li class="contacts-item">
-                        <a
-                            href="mailto:info@example.com"
-                            class="contacts-link"
-                            lang="en"
-                            >info@example.com</a
-                        >
-                    </li>
-                    <li class="contacts-item">
-                        <a href="tel:+380991111111" class="contacts-link"
-                            >+38 099 111 11 11</a
-                        >
-                    </li>
-                </ul>
+                <section class="footer-section">
+                    <a href="./index.html" lang="en" class="logo"
+                        >Web<span>Studio</span></a
+                    >
+                    <address class="address contacts-item-footer">
+                        г. Киев, пр-т Леси Украинки, 26
+                    </address>
+                    <ul class="contacts-footer">
+                        <li class="contacts-item-footer">
+                            <a
+                                href="mailto:info@example.com"
+                                class="contacts-link"
+                                lang="en"
+                                >info@example.com</a
+                            >
+                        </li>
+                        <li class="contacts-item-footer">
+                            <a href="tel:+380991111111" class="contacts-link"
+                                >+38 099 111 11 11</a
+                            >
+                        </li>
+                    </ul>
+                </section>
             </div>
         </footer>
     </body>
