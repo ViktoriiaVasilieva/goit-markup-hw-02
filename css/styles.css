@@ -33,7 +33,6 @@ body {
 .team-list,
 .what-we-do-list,
 .feature-list,
-.projects-list,
 .button-filter {
    display: flex;
 }
@@ -133,7 +132,7 @@ body {
    display: block;
    margin-bottom: 20px;
 }
-*/ .feature-list-item p {
+.feature-list-item p {
    line-height: 1.71em;
    color: var(--secondary-color);
 }
@@ -256,11 +255,17 @@ body {
 .filter-container {
    background-color: var(--white-color);
 }
+.button-filter,
+.projects-works,
+.projects-list {
+   justify-content: center;
+}
+.projects-list {
+   flex-wrap: wrap;
+   display: flex;
+}
 .projects-list-item {
    margin: 0 30px 30px 0;
    border: 1px solid #eeeeee;
-}
-.button-filter {
-   justify-content: center;
 }
 /* PAGE ПОРТФОЛИО FINISH */
