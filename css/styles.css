@@ -20,8 +20,7 @@ body {
 .section {
    padding: 94px 0;
 }
-.container,
-.container-hero {
+.container {
    width: 1200px;
    margin: 0 auto;
    border: 1px solid red;
@@ -108,28 +107,33 @@ body {
    font-size: 16px;
    font-style: inherit;
    line-height: 1.88em;
-   align-items: center;
-   text-align: center;
    letter-spacing: 0.06em;
    background-color: var(--accent-color);
    color: var(--white-color);
    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
    border-radius: 4px;
    padding: 10px 32px;
+   margin-top: 30px;
 }
-
-.hero {
+.hero-title {
    font-size: 44px;
    font-weight: 900;
    line-height: 1.36em;
-   text-align: center;
    letter-spacing: 0.06em;
    text-transform: uppercase;
    color: var(--white-color);
+   width: 696px;
+   height: 120px;
+   margin: auto;
 }
-.container-hero {
+
+.hero-section {
    background-color: var(--header-footer-background-color);
+   text-align: center;
+   align-items: center;
+   margin: auto;
 }
+
 .feature-list-item h3 {
    font-weight: 700;
    line-height: 1.14;
@@ -169,7 +173,7 @@ body {
 .section h2 {
    margin-bottom: 50px;
 }
-.team-container {
+.team-section {
    background-color: var(--secondary-background-color);
 }
 .team-list-item {
@@ -199,7 +203,7 @@ body {
    text-align: center;
    color: var(--secondary-color);
 }
-.footer-container {
+.footer-section {
    background-color: var(--header-footer-background-color);
 }
 
@@ -264,7 +268,7 @@ body {
 .description-projects {
    margin: 20px 24px;
 }
-.filter-container {
+.filter-section {
    background-color: var(--white-color);
 }
 .button-filter-list,
