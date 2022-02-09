@@ -37,7 +37,8 @@ body {
 .team-list,
 .what-we-do-list,
 .feature-list,
-.button-filter-list {
+.button-filter-list,
+.projects-list {
    display: flex;
 }
 .header-container {
@@ -80,6 +81,7 @@ body {
 }
 .header {
    background-color: var(--white-color);
+   border-bottom: 1px solid #ececec;
 }
 
 .contacts-link:focus,
@@ -122,12 +124,9 @@ body {
    font-size: 44px;
    font-weight: 900;
    line-height: 1.36em;
-   text-align: center;
    letter-spacing: 0.06em;
    text-transform: uppercase;
    color: var(--white-color);
-   width: 696px;
-   height: 120px;
    margin: auto;
 }
 
@@ -169,7 +168,6 @@ body {
 }
 .what-we-do-item {
    width: 370px;
-   height: 294px;
    mix-blend-mode: normal;
 }
 .section h2 {
@@ -276,19 +274,28 @@ body {
 .filter-section {
    background-color: var(--white-color);
 }
-.button-filter-list,
-.projects-works,
-.projects-list {
+.button-filter-list {
    justify-content: center;
+}
+.projects-list-item:not(:nth-last-child(-n + 5)) {
+   margin-bottom: 30px;
 }
 .projects-list {
    flex-wrap: wrap;
-   display: flex;
+   justify-content: center;
 }
-.projects-list-item {
+.description-projects {
    border: 1px solid #eeeeee;
-   margin: auto;
-   margin-block-start: 30px;
+   overflow: hidden;
+}
+.filter-container {
+   padding: 0;
+}
+.no-gap {
+   display: block;
+}
+.projects-list-item:not(:nth-child(3n + 3)) {
+   margin-right: 30px;
 }
 
 /* PAGE ПОРТФОЛИО FINISH */
