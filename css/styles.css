@@ -277,7 +277,7 @@ body {
 .button-filter-list {
    justify-content: center;
 }
-.projects-list-item:not(:nth-last-child(-n + 5)) {
+.projects-list-item:not(:nth-child(n + 7)) {
    margin-bottom: 30px;
 }
 .projects-list {
